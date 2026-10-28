@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Résumé of Matyáš Balcar, full-stack developer in Olomouc. Experience, selected projects, education, and technologies.">
+  <meta name="theme-color" content="#101010">
+  <title>Résumé — Matyáš Balcar</title>
+  <link rel="canonical" href="https://matyasbalcar.dev/resume.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #222; background: #e8e7e1; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-size: 13px; line-height: 1.5; }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible, button:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+    .toolbar { background: #101010; color: #f3f2ed; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px max(24px, calc((100% - 820px) / 2)); }
+    .toolbar a { font-size: 12px; text-decoration: none; white-space: nowrap; }
+    .toolbar-actions { display: flex; align-items: center; gap: 23px; }
+    button { font: inherit; cursor: pointer; border-radius: 0; }
+    #print-resume { background: #f3f2ed; color: #101010; border: 1px solid #f3f2ed; padding: 10px 13px; font-size: 11px; }
+    #resume-language { background: none; color: inherit; border: 0; font-size: 11px; padding: 10px 0; }
+    .sheet { max-width: 820px; margin: 36px auto; padding: 40px 47px; background: #fff; border: 1px solid #cccac2; }
+    .resume-header { padding-bottom: 17px; border-bottom: 2px solid #222; }
+    h1 { margin: 0; font-size: 33px; line-height: 1.1; letter-spacing: -.05em; font-weight: 600; }
+    .subtitle { font-size: 13px; margin: 9px 0 6px; }
+    .contact { display: flex; flex-wrap: wrap; gap: 3px 15px; font-size: 10px; color: #555; }
+    h2 { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; border-bottom: 1px solid #c9c9c3; padding-bottom: 5px; margin: 20px 0 8px; }
+    h3 { margin: 0; font-size: 12px; font-weight: 600; }
+    p { margin: 0; }
+    .profile { font-size: 11px; line-height: 1.6; }
+    .entry { margin-top: 13px; break-inside: avoid; }
+    .entry-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .entry-date { font-size: 10px; white-space: nowrap; color: #555; }
+    .entry-role { font-size: 10px; color: #666; margin-top: 1px; }
+    ul { padding-left: 16px; margin: 5px 0 0; font-size: 11px; line-height: 1.55; }
+    li + li { margin-top: 2px; }
+    .skills { font-size: 11px; line-height: 1.8; }
+    .skills strong { display: inline-block; min-width: 103px; font-weight: 600; }
+    [hidden] { display: none !important; }
+    @media (max-width: 620px) {
+      .toolbar { padding: 17px 20px; gap: 15px; }
+      .toolbar-actions { gap: 15px; }
+      #print-resume { font-size: 10px; padding: 9px; }
+      .sheet { margin: 20px 15px; padding: 29px 23px; }
+      h1 { font-size: 29px; }
+      .entry-header { flex-wrap: wrap; gap: 2px 12px; }
+      .skills strong { min-width: 0; margin-right: 7px; }
+    }
+    @page { size: A4; margin: 12mm 15mm; }
+    @media print {
+      :root { background: #fff; }
+      body { font-size: 10pt; }
+      .toolbar { display: none; }
+      .sheet { max-width: none; margin: 0; padding: 0; border: 0; }
+      h1 { font-size: 24pt; }
+      .resume-header { padding-bottom: 12px; }
+      h2 { margin-top: 14px; }
+      .entry { margin-top: 9px; }
+      .profile { font-size: 9pt; line-height: 1.45; }
+      ul { font-size: 8.7pt; line-height: 1.4; }
+      .entry-role, .entry-date, .contact { font-size: 8pt; }
+      .skills { font-size: 8.7pt; line-height: 1.65; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="toolbar" aria-label="Résumé controls"><a id="back-link" href="index.html">← Back to portfolio</a><div class="toolbar-actions"><button type="button" id="resume-language" aria-label="Přepnout do češtiny">EN / CZ</button><button type="button" id="print-resume">Print / save PDF ↗</button></div></nav>
+  <main class="sheet">
+    <header class="resume-header"><h1>Matyáš Balcar</h1><p class="subtitle">Full-stack developer · React / Node.js · Olomouc</p><div class="contact"><a href="mailto:matyasbalcar0@gmail.com">matyasbalcar0@gmail.com</a><a href="https://github.com/MatyasBalcar">github.com/MatyasBalcar</a><a href="https://matyasbalcar.dev">matyasbalcar.dev</a></div></header>
+    <div data-language="en">
+      <section><h2>Profile</h2><p class="profile">Full-stack developer with around four years of commercial experience in web and enterprise applications. My experience with React, Node.js, REST APIs, SQL, and production C#/.NET development is complemented by a substantial personal Java/Spring Boot + React/TypeScript project. I work across the full feature lifecycle, from data model to interface, with a focus on useful software.</p></section>
+      <section><h2>Experience</h2>
+        <article class="entry"><div class="entry-header"><h3>Elekt Labs s.r.o.</h3><span class="entry-date">2026 — present</span></div><p class="entry-role">Software developer · C# / .NET / SQL · Czechia</p><ul><li>Develop and maintain production software for manufacturing processes using C#/.NET, ASP.NET MVC, and WPF.</li><li>Design and modify database queries, reports, and backend logic; debug issues in a large existing system.</li></ul></article>
+        <article class="entry"><div class="entry-header"><h3>Railsformers</h3><span class="entry-date">02/2024 — 01/2026</span></div><p class="entry-role">Full-stack / backend developer · Czechia</p><ul><li>Contributed to web applications, REST APIs, and relational database work with React and Node.js.</li><li>Used Git, Docker, and code review to develop and maintain real application features.</li></ul></article>
+        <article class="entry"><div class="entry-header"><h3>IT4Innovations</h3><span class="entry-date">08/2021 — 12/2022</span></div><p class="entry-role">Frontend developer · Ostrava</p><ul><li>Built web interfaces and integrated frontend components with backend services.</li></ul></article>
+      </section>
+      <section><h2>Selected projects</h2>
+        <article class="entry"><div class="entry-header"><h3><a href="index.html#work">CodeDuel — competitive programming platform</a></h3><span class="entry-date">2026</span></div><p class="entry-role">Java 21 · Spring Boot · PostgreSQL · React · TypeScript · Docker</p><ul><li>Solo-built local MVP with accounts, matchmaking, timed duels, a leaderboard, and a web interface.</li><li>Asynchronous code evaluation in isolation, consistent duel results, and transactional Elo updates.</li></ul></article>
+        <article class="entry"><div class="entry-header"><h3><a href="https://github.com/MatyasBalcar/robot-solver">Gridline — warehouse robot simulator</a></h3><span class="entry-date">2026</span></div><p class="entry-role">Java 17 · Swing · Algorithms</p><ul><li>Cooperative robot route planning with space-time A*, reservations, and Conflict-Based Search; collision validation and scenario testing.</li></ul></article>
+      </section>
+      <section><h2>Education</h2><article class="entry"><div class="entry-header"><h3>Palacký University Olomouc</h3><span class="entry-date">2026 — present</span></div><p class="entry-role">Master’s studies · Computer Science</p></article><article class="entry"><div class="entry-header"><h3>Palacký University Olomouc</h3><span class="entry-date">2023 — 2026</span></div><p class="entry-role">Bachelor’s degree (Bc.) · Computer Science</p></article></section>
+      <section><h2>Technologies & tools</h2><div class="skills"><p><strong>Frontend</strong> React, TypeScript/JavaScript, HTML/CSS, API integration</p><p><strong>Backend</strong> Node.js, REST APIs, C#/.NET, Java/Spring Boot (personal project), authentication</p><p><strong>Data & operations</strong> PostgreSQL, SQL, Firebird, Docker, Git, Linux, CI/CD basics, testing</p></div></section>
+    </div>
+    <div data-language="cs" hidden>
+      <section><h2>Profil</h2><p class="profile">Full-stack vývojář s přibližně čtyřmi lety komerční praxe na webových a podnikových aplikacích. Zkušenosti s Reactem, Node.js, REST API, SQL a produkčním C#/.NET vývojem doplňuji vlastním rozsáhlejším projektem Java/Spring Boot + React/TypeScript. Umím řešit funkci od datového modelu po rozhraní a zajímá mě software s reálným přínosem pro uživatele.</p></section>
+      <section><h2>Pracovní zkušenosti</h2>
+        <article class="entry"><div class="entry-header"><h3>Elekt Labs s.r.o.</h3><span class="entry-date">2026 — dosud</span></div><p class="entry-role">Software developer · C# / .NET / SQL · ČR</p><ul><li>Vyvíjím a udržuji produkční software pro výrobní procesy v C#/.NET, ASP.NET MVC a WPF.</li><li>Navrhuji a upravuji databázové dotazy, přehledy a backendovou logiku; ladím chyby v rozsáhlejším existujícím systému.</li></ul></article>
+        <article class="entry"><div class="entry-header"><h3>Railsformers</h3><span class="entry-date">02/2024 — 01/2026</span></div><p class="entry-role">Full-stack / backend developer · ČR</p><ul><li>Podílel jsem se na vývoji webových aplikací, REST API a práci s relačními databázemi v prostředí React a Node.js.</li><li>Pracoval jsem s Gitem, Dockerem a code review při vývoji a údržbě reálných funkcionalit.</li></ul></article>
+        <article class="entry"><div class="entry-header"><h3>IT4Innovations</h3><span class="entry-date">08/2021 — 12/2022</span></div><p class="entry-role">Frontend developer · Ostrava</p><ul><li>Vývoj webových rozhraní a integrace frontendových komponent s backendovými službami.</li></ul></article>
+      </section>
+      <section><h2>Vybrané projekty</h2>
+        <article class="entry"><div class="entry-header"><h3><a href="index.html?lang=cs#work">CodeDuel — soutěžní programovací platforma</a></h3><span class="entry-date">2026</span></div><p class="entry-role">Java 21 · Spring Boot · PostgreSQL · React · TypeScript · Docker</p><ul><li>Samostatně vytvořený lokální MVP: účty, matchmaking, časované duely, žebříček a webové rozhraní.</li><li>Asynchronní vyhodnocování kódu v izolovaném prostředí; konzistentní výsledky soubojů a transakční aktualizace Elo.</li></ul></article>
+        <article class="entry"><div class="entry-header"><h3><a href="https://github.com/MatyasBalcar/robot-solver">Gridline — simulátor skladových robotů</a></h3><span class="entry-date">2026</span></div><p class="entry-role">Java 17 · Swing · Algoritmy</p><ul><li>Kooperativní plánování tras robotů pomocí space-time A*, rezervací a Conflict-Based Search; validace kolizí a testování scénářů.</li></ul></article>
+      </section>
+      <section><h2>Vzdělání</h2><article class="entry"><div class="entry-header"><h3>Univerzita Palackého v Olomouci</h3><span class="entry-date">2026 — dosud</span></div><p class="entry-role">Navazující magisterské studium · Informatika</p></article><article class="entry"><div class="entry-header"><h3>Univerzita Palackého v Olomouci</h3><span class="entry-date">2023 — 2026</span></div><p class="entry-role">Bakalářské studium · Informatika (Bc.)</p></article></section>
+      <section><h2>Technologie a nástroje</h2><div class="skills"><p><strong>Frontend</strong> React, TypeScript/JavaScript, HTML/CSS, integrace API</p><p><strong>Backend</strong> Node.js, REST API, C#/.NET, Java/Spring Boot (projekt), autentizace</p><p><strong>Data a provoz</strong> PostgreSQL, SQL, Firebird, Docker, Git, Linux, CI/CD základy, testování</p></div></section>
+    </div>
+  </main>
+  <script>
+    (() => {
+      let language = 'en';
+      try {
+        const preferred = new URLSearchParams(location.search).get('lang') || localStorage.getItem('portfolio-language');
+        if (preferred === 'cs') language = 'cs';
+      } catch { /* The English version remains available without storage. */ }
+      function applyLanguage() {
+        document.documentElement.lang = language;
+        document.title = `${language === 'cs' ? 'Životopis' : 'Résumé'} — Matyáš Balcar`;
+        for (const section of document.querySelectorAll('[data-language]')) section.hidden = section.dataset.language !== language;
+        const back = document.querySelector('#back-link');
+        back.textContent = language === 'cs' ? '← Zpět na portfolio' : '← Back to portfolio';
+        back.href = `index.html?lang=${language}`;
+        document.querySelector('.subtitle').textContent = language === 'cs' ? 'Full-stack vývojář · React / Node.js · Olomouc' : 'Full-stack developer · React / Node.js · Olomouc';
+        document.querySelector('#print-resume').textContent = language === 'cs' ? 'Tisk / uložit PDF ↗' : 'Print / save PDF ↗';
+        document.querySelector('#resume-language').textContent = language === 'cs' ? 'CZ / EN' : 'EN / CZ';
+        document.querySelector('#resume-language').setAttribute('aria-label', language === 'cs' ? 'Switch to English' : 'Přepnout do češtiny');
+        try { localStorage.setItem('portfolio-language', language); } catch { /* Storage is optional. */ }
+        try {
+          const url = new URL(location.href);
+          if (url.searchParams.has('lang')) {
+            url.searchParams.set('lang', language);
+            history.replaceState(null, '', url);
+          }
+        } catch { /* Direct file previews may restrict history changes. */ }
+      }
+      document.querySelector('#resume-language').addEventListener('click', () => { language = language === 'cs' ? 'en' : 'cs'; applyLanguage(); });
+      document.querySelector('#print-resume').addEventListener('click', () => window.print());
+      applyLanguage();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "matyasbalcar-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The personal portfolio of Matyáš Balcar. No build step or dependencies.",
+  "scripts": {
+    "start": "node serve.mjs",
+    "dev": "node serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

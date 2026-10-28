@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Matyáš Balcar, a full-stack developer based in Olomouc. Personal projects, work experience, and contact details.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Matyáš Balcar — Full-stack developer">
+  <meta property="og:description" content="A few projects I’ve built, what I work on, and how to get in touch.">
+  <meta property="og:url" content="https://matyasbalcar.dev/">
+  <meta property="og:image" content="https://matyasbalcar.dev/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://matyasbalcar.dev/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <title>Matyáš Balcar — Full-stack developer</title>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Matyáš Balcar, home">m<span class="wordmark-slash">/</span>b<span class="wordmark-dot">.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#work" data-i18n="navWork">Projects</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="language-toggle" type="button" aria-label="Přepnout do češtiny" title="Přepnout do češtiny"><span class="language-current">EN</span><span class="muted" aria-hidden="true"> / </span><span class="language-other" aria-hidden="true">CZ</span></button>
+      <a class="resume-link" href="resume.html"><span data-i18n="resume">Résumé</span><span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title"><span data-i18n="heroTitle">Hi, I’m</span><span data-i18n="heroName">Matyáš.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">I’m a full-stack developer in Olomouc. I work with C#/.NET, React, and Node.js. Here are a couple of things I’ve built outside of work.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#work"><span data-i18n="explore">See my projects</span><span aria-hidden="true">↘</span></a>
+        </div>
+        <p class="hero-location mono"><span class="location-cross" aria-hidden="true">⌖</span><span data-i18n="location">Olomouc, Czechia</span><span class="hero-time" id="local-time" aria-label="Current time in Olomouc"></span></p>
+      </div>
+
+      <figure class="routing-lab" aria-labelledby="lab-caption">
+        <div class="lab-canvas-wrap">
+          <canvas id="route-canvas" role="img" aria-label="Six numbered robots follow coordinated paths through a warehouse grid. Use the controls below to pause, step, or change the layout."></canvas>
+          <span class="map-axis map-axis-top mono" aria-hidden="true">X →</span>
+          <span class="map-axis map-axis-bottom mono" aria-hidden="true">Y ↓</span>
+        </div>
+        <div class="lab-readout mono"><span><span data-i18n="agents">AGENTS</span> <strong>06</strong></span><span><span data-i18n="tick">TICK</span> <strong id="tick-count">000</strong></span><span><span data-i18n="conflicts">CONFLICTS</span> <strong id="conflict-count">00</strong></span></div>
+        <div class="lab-controls">
+          <button type="button" id="simulation-toggle" class="lab-button" aria-pressed="false"><span id="play-symbol" aria-hidden="true">Ⅱ</span><span id="play-label" data-i18n="pause">Pause</span></button>
+          <button type="button" id="simulation-step" class="lab-button"><span aria-hidden="true">→|</span><span data-i18n="step">Step</span></button>
+          <button type="button" id="simulation-layout" class="lab-button lab-button-last"><span aria-hidden="true">↻</span><span data-i18n="newLayout">New layout</span></button>
+        </div>
+        <figcaption id="lab-caption"><span data-i18n="labCaption">A small routing demo inspired by my Gridline project.</span><a href="#work" aria-label="Read about Gridline">↙</a></figcaption>
+        <p class="sr-only" id="simulation-status" aria-live="polite"></p>
+      </figure>
+    </section>
+
+    <section class="work-section section-shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><h2 id="work-title" data-i18n="workTitle">Projects</h2><p class="section-intro" data-i18n="workIntro">Two projects I’ve been working on in my own time.</p></div>
+
+      <article class="project project-codeduel" aria-labelledby="codeduel-title">
+        <div class="project-visual duel-visual">
+          <div class="duel-window" aria-hidden="true">
+            <div class="duel-topbar"><span class="duel-brand">code<span>duel</span><b>_</b></span><span class="duel-round">DUEL / 01</span><span class="duel-clock">08:42</span></div>
+            <div class="duel-players"><span><i></i> player_01 <small>READY</small></span><span class="duel-vs">vs</span><span>player_02 <i class="player-outline"></i></span></div>
+            <div class="duel-body"><div class="duel-problem"><span class="mono">CHALLENGE 001</span><h3>Two Sum</h3><p>Find two numbers in the array that add up to the target.</p><div class="duel-example"><span>INPUT</span><code>[2, 7, 11, 15]</code><span>TARGET</span><code>9</code></div><span class="difficulty mono">ARRAYS / EASY</span></div><div class="duel-editor"><div class="editor-tab mono">solution.java <span>JAVA 21</span></div><pre><code><span class="line-number">01</span> <span class="code-keyword">class</span> Solution {
+<span class="line-number">02</span>   <span class="code-keyword">int</span>[] twoSum(
+<span class="line-number">03</span>     <span class="code-keyword">int</span>[] nums, <span class="code-keyword">int</span> target
+<span class="line-number">04</span>   ) {
+<span class="line-number">05</span>     <span class="code-comment">// Look for a matching value.</span>
+<span class="line-number">06</span>     <span class="code-keyword">var</span> seen = <span class="code-keyword">new</span> HashMap&lt;
+<span class="line-number">07</span>       Integer, Integer&gt;();
+<span class="line-number">08</span>     <span class="code-cursor"> </span>
+<span class="line-number">09</span>   }
+<span class="line-number">10</span> }</code></pre><div class="editor-bottom mono"><span>● READY TO RUN</span><span>SUBMIT ↗</span></div></div></div>
+          </div>
+          <p class="visual-note" data-i18n="interfaceStudy">Interface illustration</p>
+        </div>
+        <div class="project-info"><div><h3 id="codeduel-title">CodeDuel</h3><p data-i18n="codeduelDescription">A programming duel app I built with Java and React. It pairs players, runs their code, and updates their Elo rating after each match.</p><ul class="tags" aria-label="CodeDuel technologies"><li>Java 21</li><li>Spring Boot</li><li>React</li><li>TypeScript</li><li>PostgreSQL</li><li>Docker</li></ul></div><button type="button" class="project-open" data-project="codeduel"><span data-i18n="behindProject">More about this project</span><span class="project-arrow" aria-hidden="true">↗</span></button></div>
+      </article>
+
+      <article class="project project-gridline" aria-labelledby="gridline-title">
+        <div class="project-visual gridline-visual">
+          <div class="gridline-window" aria-hidden="true"><div class="gridline-toolbar"><span class="gridline-brand"><span class="grid-icon">▦</span> gridline</span><span class="mono">WAREHOUSE / COOPERATIVE A*</span><span class="gridline-run">▶ RUNNING</span></div><div class="gridline-body"><div class="warehouse-mini" id="warehouse-mini"></div><div class="dispatch-panel"><span class="mono">DISPATCH BOARD</span><h3>Warehouse<br>status</h3><div class="dispatch-stat"><span>Fleet</span><strong>06 <small>robots</small></strong></div><div class="dispatch-stat"><span>Planner</span><strong>A* <small>space-time</small></strong></div><div class="dispatch-stat"><span>Conflict check</span><strong>PASS <small>validated</small></strong></div><div class="dispatch-progress"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><p class="mono">PLANNER READY</p></div></div><div class="gridline-footer mono"><span>LAYOUT / OPEN WAREHOUSE</span><span>JAVA 17 · SWING · ZERO DEPENDENCIES</span></div></div>
+          <p class="visual-note" data-i18n="simulationStudy">Simulator illustration</p>
+        </div>
+        <div class="project-info"><div><h3 id="gridline-title">Gridline</h3><p data-i18n="gridlineDescription">A Java app for simulating warehouse robots. I built it to explore pathfinding and see how multiple robots can share the same space.</p><ul class="tags" aria-label="Gridline technologies"><li>Java 17</li><li>Swing</li><li>Space-time A*</li><li>Conflict-Based Search</li></ul></div><button type="button" class="project-open" data-project="gridline"><span data-i18n="behindProject">More about this project</span><span class="project-arrow" aria-hidden="true">↗</span></button></div>
+      </article>
+      <a class="github-more text-link" href="https://github.com/MatyasBalcar" target="_blank" rel="noopener noreferrer"><span data-i18n="moreGithub">Other projects on GitHub</span><span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="experience-section section-shell" aria-labelledby="experience-title"><div class="section-heading"><h2 id="experience-title" data-i18n="experienceTitle">Where I’ve worked</h2></div>
+      <div class="experience-list"><article class="experience-row"><p class="experience-date mono" data-i18n="elektDates">2026 — PRESENT</p><div class="experience-role"><h3>Elekt Labs</h3><p data-i18n="elektRole">Software developer</p></div><p class="experience-description" data-i18n="elektDescription">I work on software for manufacturing processes, using C#/.NET, ASP.NET MVC, WPF, and SQL.</p></article><article class="experience-row"><p class="experience-date mono">02/2024 — 01/2026</p><div class="experience-role"><h3>Railsformers</h3><p data-i18n="railsRole">Full-stack / backend developer</p></div><p class="experience-description" data-i18n="railsDescription">I worked on web apps, REST APIs, and relational databases with React and Node.js.</p></article><article class="experience-row"><p class="experience-date mono">08/2021 — 12/2022</p><div class="experience-role"><h3>IT4Innovations</h3><p data-i18n="itRole">Frontend developer</p></div><p class="experience-description" data-i18n="itDescription">I built web interfaces and connected them to backend services.</p></article></div>
+    </section>
+
+    <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title"><h2 id="contact-title" data-i18n="contactTitle">Get in touch</h2><div class="contact-bottom"><div><p data-i18n="contactDescription">If you’d like to talk about a project or ask me something, send me an email.</p><a class="contact-email" href="mailto:matyasbalcar0@gmail.com">matyasbalcar0@gmail.com<span aria-hidden="true">↗</span></a></div><button class="copy-email" type="button"><span class="copy-icon" aria-hidden="true">▢</span><span data-i18n="copyEmail">Copy email</span></button></div><p class="sr-only" id="copy-status" aria-live="polite"></p></section>
+  </main>
+
+  <footer class="site-footer section-shell"><a class="footer-name" href="#top">Matyáš Balcar<span aria-hidden="true"> ↑</span></a><p class="mono">© <span id="current-year">2026</span></p><div><a href="https://github.com/MatyasBalcar" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="resume.html" data-i18n="resume">Résumé</a></div></footer>
+
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-toolbar"><button type="button" id="dialog-close" class="dialog-close" aria-label="Close project">×</button></div><div id="dialog-content"></div></dialog>
+  <noscript><p class="noscript-note">The portfolio works without JavaScript. Enable it for the routing experiment, project notes, and language switch. <a href="mailto:matyasbalcar0@gmail.com?subject=CodeDuel">Ask about CodeDuel</a> · <a href="https://github.com/MatyasBalcar/robot-solver">Explore Gridline’s source</a>.</p></noscript>
+</body>
+</html>
