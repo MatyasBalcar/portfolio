@@ -88,13 +88,6 @@
   const dialog = document.querySelector('#project-dialog');
   const translate = key => translations[language][key] ?? translations.en[key] ?? key;
 
-  function updateTime() {
-    const time = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Prague', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date());
-    const element = document.querySelector('#local-time');
-    element.textContent = `${time} ${language === 'cs' ? 'MÍSTNÍ ČAS' : 'LOCAL TIME'}`;
-    element.setAttribute('aria-label', `${language === 'cs' ? 'Čas v Olomouci' : 'Time in Olomouc'}: ${time}`);
-  }
-
   function setLanguage(nextLanguage) {
     language = nextLanguage;
     document.documentElement.lang = language;
@@ -116,7 +109,6 @@
         history.replaceState(null, '', url);
       }
     } catch { /* Direct file previews may restrict history changes. */ }
-    updateTime();
     if (simulation) simulation.updateLabels();
     if (activeProject) renderProject(activeProject);
   }
@@ -182,7 +174,6 @@
   });
 
   document.querySelector('#current-year').textContent = new Date().getFullYear();
-  setInterval(updateTime, 60000);
 
   if ('IntersectionObserver' in window) {
     const sections = document.querySelectorAll('#work, #contact');

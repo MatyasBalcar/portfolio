@@ -65,7 +65,6 @@ p, h1, h2, h3, figure { margin: 0; }
 .text-link:hover > :last-child { transform: translate(2px, -2px); }
 .hero-location { display: flex; gap: 10px; align-items: center; color: #94948e; margin-top: 57px; letter-spacing: .02em; font-size: 10px; }
 .location-cross { color: #bcbcb5; font-size: 19px; line-height: 1; }
-.hero-time { margin-left: 6px; padding-left: 16px; border-left: 1px solid var(--line); font-variant-numeric: tabular-nums; }
 
 .routing-lab { width: 100%; min-width: 0; align-self: center; position: relative; margin-top: 10px; }
 .lab-canvas-wrap { position: relative; width: 100%; aspect-ratio: 1.09; background: #141413; border: 1px solid #363632; }

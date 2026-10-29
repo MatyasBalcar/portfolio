@@ -23,7 +23,7 @@ You can also open `index.html` directly. Clipboard access depends on the browser
 
 - `index.html` — portfolio content, project illustrations, navigation, contact, and metadata.
 - `styles.css` — responsive monochrome design, mobile layout, reduced-motion behavior, and print styles.
-- `app.js` — English/Czech translations, project dialogs, email copying, local clock, and the routing experiment.
+- `app.js` — English/Czech translations, project dialogs, email copying, and the routing experiment.
 - `resume.html` — English/Czech résumé with A4 print styling. Use **Print / save PDF** to download a PDF through the browser.
 - `assets/favicon.svg` — original vector monogram.
 - `assets/social-card.png` — social sharing image rendered from the site.
