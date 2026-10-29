@@ -36,12 +36,10 @@ p, h1, h2, h3, figure { margin: 0; }
 .skip-link:focus { top: 16px; }
 
 .site-header { height: 96px; margin-inline: auto; padding-inline: var(--gutter); max-width: 1600px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
-.wordmark { font-size: 34px; font-weight: 700; letter-spacing: -.09em; line-height: 1; min-width: 96px; }
-.wordmark-slash { display: inline-block; font-size: 28px; margin-inline: 4px 5px; font-weight: 300; color: #868682; }
-.wordmark-dot { margin-left: 2px; }
+.home-link { padding-block: 14px; font-size: 13px; color: #bebeb9; transition: color .2s; }
 .main-nav { display: flex; gap: 36px; font-size: 13px; }
 .main-nav a { padding-block: 14px; position: relative; color: #bebeb9; transition: color .2s; }
-.main-nav a:hover, .main-nav a[aria-current] { color: var(--text); }
+.home-link:hover, .main-nav a:hover, .main-nav a[aria-current] { color: var(--text); }
 .main-nav a::after { position: absolute; content: ""; height: 1px; background: currentColor; bottom: 6px; left: 0; right: 100%; transition: right .2s; }
 .main-nav a:hover::after, .main-nav a[aria-current]::after { right: 0; }
 .header-actions { display: flex; align-items: center; gap: 30px; }
@@ -226,8 +224,7 @@ dialog::backdrop { background: #000b; backdrop-filter: blur(6px); }
   :root { --gutter: 24px; }
   html { scroll-padding-top: 30px; }
   .site-header { height: 79px; }
-  .wordmark { min-width: 0; font-size: 30px; }
-  .wordmark-slash { font-size: 24px; }
+  .home-link { font-size: 11px; }
   .main-nav { gap: 22px; margin-left: auto; margin-right: 27px; font-size: 11px; }
   .header-actions { gap: 0; }
   .resume-link { display: none; }

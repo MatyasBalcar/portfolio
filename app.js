@@ -8,7 +8,7 @@
   const translations = {
     en: { ...english, play: 'Play', copied: 'Copied!', copyFailed: 'Select email', copySuccess: 'Email address copied.', copyManual: 'Email selected. Press Control+C or Command+C to copy.', simulationRunning: 'Simulation running.', simulationPaused: 'Simulation paused.', layoutChanged: 'New warehouse layout loaded.', routeFailed: 'No safe schedule found. Try another layout.' },
     cs: {
-      skip: 'Přeskočit na obsah', navWork: 'Projekty', navContact: 'Kontakt', resume: 'Životopis',
+      skip: 'Přeskočit na obsah', home: 'Domů', navWork: 'Projekty', navContact: 'Kontakt', resume: 'Životopis',
       heroTitle: 'Ahoj,', heroName: 'jsem Matyáš.',
       heroDescription: 'Jsem full-stack vývojář z Olomouce. Pracuji s C#/.NET, Reactem a Node.js. Tady je pár věcí, které jsem vytvořil ve volném čase.',
       explore: 'Moje projekty', location: 'Olomouc, Česko',
