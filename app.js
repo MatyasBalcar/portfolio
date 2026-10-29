@@ -35,14 +35,14 @@
   const projects = {
     codeduel: {
       title: 'CodeDuel', stack: ['Java 21', 'Spring Boot', 'PostgreSQL', 'React', 'TypeScript', 'Docker'],
-      url: `mailto:${email}?subject=CodeDuel`,
+      url: 'https://github.com/matyasbalcar/codeduel',
       en: {
         summary: 'A side project for timed programming duels, with accounts, matchmaking, code evaluation, and a leaderboard.',
         sections: [
           { title: 'How it works', text: 'Code evaluation runs asynchronously in an isolated environment. Each duel gets a consistent result, and Elo updates use database transactions.' },
           { title: 'Features', items: ['Accounts and matchmaking for timed duels.', 'Isolated code execution and a leaderboard.', 'A React and TypeScript interface with a Spring Boot backend and PostgreSQL.'] }
         ],
-        action: 'Ask about CodeDuel', note: 'This is a local MVP I built in 2026. The project preview is an illustration.'
+        action: 'Learn about CodeDuel', note: 'This is a local MVP I built in 2026. The project preview is an illustration.'
       },
       cs: {
         summary: 'Vlastní projekt pro časované programovací duely, s účty, hledáním soupeřů, vyhodnocováním kódu a žebříčkem.',
@@ -50,7 +50,7 @@
           { title: 'Jak to funguje', text: 'Kód se vyhodnocuje asynchronně v izolovaném prostředí. Souboje mají konzistentní výsledky a aktualizace Elo probíhají v databázových transakcích.' },
           { title: 'Funkce', items: ['Účty a hledání soupeřů pro časované duely.', 'Izolované spouštění kódu a žebříček.', 'Rozhraní v Reactu a TypeScriptu, backend ve Spring Boot a databáze PostgreSQL.'] }
         ],
-        action: 'Napsat o CodeDuel', note: 'Projekt jsem vytvořil v roce 2026 jako lokální MVP. Náhled je ilustrace.'
+        action: 'Více o CodeDuel', note: 'Projekt jsem vytvořil v roce 2026 jako lokální MVP. Náhled je ilustrace.'
       }
     },
     gridline: {

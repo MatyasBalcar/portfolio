@@ -54,7 +54,7 @@ Personal details, employment dates, education, technologies, and CodeDuel capabi
 
 - [GitHub profile](https://github.com/MatyasBalcar)
 - [Gridline source and README](https://github.com/MatyasBalcar/robot-solver)
-- CodeDuel's CV link (`https://github.com/MatyasBalcar/CodeDuel`) returned 404 during research. Its case study uses a working email link rather than sending visitors to an unavailable repository. Replace `projects.codeduel.url` in `app.js` when a public URL is ready, and update the action labels in both languages.
+- [CodeDuel source and README](https://github.com/matyasbalcar/codeduel)
 
 Project visuals are original HTML/CSS illustrations, labeled below each preview. They are not screenshots or live applications. The small homepage experiment is a separate JavaScript implementation of prioritized space-time A* with cell and edge reservations. It validates the complete schedule for cell conflicts and head-on swaps. It is not the full Gridline Java simulator, has no inventory or pickup/delivery model, and does not implement CBS. Three predefined maps keep the experiment bounded.
 
